@@ -98,7 +98,7 @@
             border: 1px solid #1f2937;
             color: #b26bff;
             text-align: center;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
     </style>
 </head>
@@ -134,21 +134,10 @@
 
     <div class="counter">
         <h2>Visitor Counter</h2>
-        <p>You are visitor number: <span id="visitor-count">Loading...</span></p>
+        <p>You are visitor number:</p>
+        <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Ftech-sverre.github.io&count_bg=%23B26BFF&title_bg=%23111827&icon=&icon_color=%23FFFFFF&title=Visitors&edge_flat=false" alt="Visitor counter">
     </div>
 </main>
-
-<script>
-    fetch('https://api.countapi.xyz/update/techsverre-site/visits/?amount=1')
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById('visitor-count').innerText = data.value;
-        })
-        .catch(error => {
-            document.getElementById('visitor-count').innerText = "Error";
-            console.error(error);
-        });
-</script>
 
 </body>
 </html>
