@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torrents - TechSverre</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #0d0f14;
+            color: #3690F6;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background: linear-gradient(135deg, #111827, #0d0f14);
+            border-bottom: 1px solid #1f2937;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #3690F6;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #3690F6;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #3690F6;
+        }
+
+        .file-box {
+            background: #111827;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #1f2937;
+            margin-bottom: 20px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #3690F6;
+            color: #0d0f14;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .download-btn:hover {
+            background: #5aa6ff;
+        }
+
+        /* Hamburger button */
+        .hamburger {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            font-size: 32px;
+            cursor: pointer;
+            color: #3690F6;
+            z-index: 1000;
+        }
+
+        /* Side menu */
+        .side-menu {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: #111827;
+            overflow-x: hidden;
+            transition: 0.4s;
+            padding-top: 60px;
+            border-left: 2px solid #3690F6;
+            z-index: 999;
+        }
+
+        .side-menu a {
+            padding: 12px 24px;
+            text-decoration: none;
+            font-size: 22px;
+            color: #3690F6;
+            display: block;
+        }
+
+        .side-menu a:hover {
+            background-color: #1f2937;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+
+<div id="sideMenu" class="side-menu">
+    <a href="index.html">Main</a>
+    <a href="torrents.html">Torrents</a>
+    <a href="other-media.html">Other Media</a>
+</div>
+
+<header>
+    <img src="hnSW4ZDpWY2qThfg8ZBJx.png" class="logo">
+    <h1>Torrents</h1>
+</header>
+
+<main>
+    <h2>Torrent Downloads</h2>
+    <p>Game & Movie Torrents you can download! (Currently: 10)</p>
+
+    <div class="file-box">
+        <h3>F1 2021</h3>
+        <p>F1 2021 Game torrent.</p>
+        <a class="download-btn" href="files/F1-2021.torrent" download>Download</a>
+    </div>
+
+    <div class="file-box">
+        <h3>Forza Horizon 5</h3>
+        <p>Forza Horizon 5 Game torrent.</p>
+        <a class="download-btn" href="files/FH5.torrent" download>Download</a>
+    </div>
+
+    <div class="file-box">
+        <h3>F1 2019</h3>
+        <p>F1 2019 Game torrent.</p>
+        <a class="download-btn" href="files/F1-2019.torrent" download>Download</a>
+    </div>
+
+    <div class="file-box">
+        <h3>GTA V Enhanced</h3>
+        <p>GTA V Enhanced Game torrent.</p>
+        <a class="download-btn" href="files/GTA-V-Enhanced.torrent" download>Download</a>
+    </div>
+
+    <div class="file-box">
+        <h3>BeamNG.Drive</h3>
+        <p>BeamNG.Drive Game torrent.</p>
+        <a class="download-btn" href="files/GTA-V-Enhanced.torrent" download>Download</a>
+    </div>
+
+    <div class="file-box">
+        <h3>Assetto Corsa Competizione</h3>
+        <p>Assetto Corsa Competizione Game torrent.</p>
+        <a class="download-btn" href="files/Assetto-Corsa-Competizione.torrent" download>Download</a>
+    </div>
+
+    <div class="file-box">
+        <h3>Golf With Your Friends</h3>
+        <p>Golf With Your Friends Game torrent.</p>
+        <a class="download-btn" href="files/Golf-With-Your-Friends.torrent" download>Download</a>
+    </div>
+
+    <div class="file-box">
+        <h3>Human: Fall Flat</h3>
+        <p>Human: Fall Flat Game torrent.</p>
+        <a class="download-btn" href="files/Human-Fall-Flat.torrent" download>Download</a>
+    </div>
+
+    <div class="file-box">
+        <h3>Call of Duty: Modern Warfare II</h3>
+        <p>Call of Duty: Modern Warfare II Game torrent.</p>
+        <a class="download-btn" href="files/COD-MW2.torrent" download>Download</a>
+    </div>
+
+    <div class="file-box">
+        <h3>A Minecraft Movie (1080P)</h3>
+        <p>A Minecraft Movie Movie torrent.</p>
+        <a class="download-btn" href="files/A-Minecraft-Movie-1080P.torrent" download>Download</a>
+    </div>
+
+    <div class="file-box">
+        <h3>placeholder</h3>
+        <p>placeholder Game torrent.</p>
+        <a class="download-btn" href="files/Assetto-Corsa-Competizione.torrent" download>Download</a>
+    </div>
+
+</main>
+
+<script>
+function toggleMenu() {
+    let menu = document.getElementById("sideMenu");
+    menu.style.width = (menu.style.width === "250px") ? "0" : "250px";
+}
+</script>
+
+</body>
+</html>
+
+
